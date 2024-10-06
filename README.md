@@ -51,4 +51,4 @@ Users should be able to:
 
 ## Links
 
-- One can find the live site [here](https://split-smart.vercel.app/)
+- One can find the live site [here](https://split-smart-omega.vercel.app/)
