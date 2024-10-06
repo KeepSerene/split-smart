@@ -8,6 +8,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
+
+  @media screen and (width >= 30em) {
+    gap: 2rem;
+  }
+
+  @media screen and (width >= 48em) {
+    gap: 0;
+  }
 
   .row-group {
     display: grid;
