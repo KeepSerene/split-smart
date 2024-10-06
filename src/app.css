@@ -1,0 +1,40 @@
+.app {
+  max-width: 56.25rem;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .logo {
+    margin-inline: auto;
+  }
+
+  .wrapper {
+    background-color: hsl(var(--white-val));
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    padding: var(--spacing);
+    box-shadow: 0 4rem 5rem 0 hsla(var(--neutral3-clr-val) / 0.4);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+
+    @media screen and (width >= 48em) {
+      border-radius: 2rem;
+
+      flex-direction: row;
+    }
+  }
+
+  .sr-only {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    position: absolute;
+    left: -99999px;
+    top: auto;
+  }
+}

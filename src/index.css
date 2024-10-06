@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Typography */
+  --ff: "Space Mono", monospace;
+  --fs-form-inputs: 1.5rem;
+  --fw-regular: 700;
+
+  /* Colors */
+  /* Primary color */
+  --primary-clr-val: 172 67% 45%;
+
+  /* Neutral colors */
+  --neutral1-clr-val: 183 100% 15%;
+  --neutral1-clr-modified-val: 183 100% 5%;
+  --neutral2-clr-val: 186 14% 43%;
+  --neutral3-clr-val: 184 14% 56%;
+  --neutral4-clr-val: 185 41% 84%;
+  --neutral5-clr-val: 189 41% 97%;
+
+  --white-val: 0 0% 100%;
+  --error-clr-val: 12 67% 55%;
+
+  /* Spacing */
+  --spacing: clamp(2rem, 4vw, 3.5rem);
+}
+
+html {
+  font-size: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+/* Hide arrows from input-type-number */
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+img,
+picture,
+figure,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: hsl(var(--neutral4-clr-val));
+  color: hsl(var(--neutral1-clr-val));
+  font-family: var(--ff);
+  font-weight: var(--fw-regular);
+  padding-top: var(--spacing);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (width >= 48em) {
+    padding: var(--spacing);
+  }
+}
+
+::selection {
+  background-color: hsl(var(--primary-clr-val));
+  color: hsl(var(--white-val));
+}
